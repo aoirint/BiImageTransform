@@ -4,9 +4,7 @@ import torch
 # https://note.nkmk.me/python-pillow-add-margin-expand-canvas/
 def expand2square_pil(pil_img, background_color):
     width, height = pil_img.size
-    if width == height:
-        return pil_img
-    elif width > height:
+    if width > height:
         result = Image.new(pil_img.mode, (width, width), background_color)
         result.paste(pil_img, (0, (width - height) // 2))
         return result

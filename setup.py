@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='BiImageTransform',
-    version='0.1.0-alpha',
+    version='0.1.0-alpha1',
     license='MIT',
 
     packages=[ 'BiImageTransform', ],
